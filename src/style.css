@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .testing {
+  background-color: #ddd;
+  border: 2px solid #777;
+}
+
+:root {
+  --primary: #1eccac;
+  --leadFont: 1.2rem;
+} */
+
+.cardshadow {
+  filter: drop-shadow(30px 30px 0px #eee);
+}
+
+.cardshadow:hover {
+  filter: drop-shadow(30px 30px 10px #bbb);
+}
+
+.omnifood {
+  background-image: url("../images/omnifood-card.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.sales {
+  background-image: url("../images/sales-card.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.lisbon {
+  background-image: url("../images/lisbon.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
