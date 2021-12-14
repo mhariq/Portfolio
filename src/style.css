@@ -27,13 +27,13 @@
   width: 100%;
 }
 .sales {
-  background-image: url("../images/sales-card.png");
+  background-image: url("../build/images/sales-card.png");
   background-size: cover;
   background-position: center;
   width: 100%;
 }
 .lisbon {
-  background-image: url("../images/lisbon.png");
+  background-image: url("../build/images/lisbon.png");
   background-size: cover;
   background-position: center;
   width: 100%;
