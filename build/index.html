@@ -1,147 +1,172 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
+    
     <title>Yosuf Hariq</title>
   </head>
 
-  <body class ="text-[#25040d]">
+  <body class ="overflow-x-hidden text-[#515151] selection:text-[#894B48]">
     <header
       class="
+      header
         flex
         items-center
         justify-between
         bg-white
         h-[6rem]
         py-0
-        px-[4.8rem]
+        md:pr-[4.8rem]
+        pr-[1.2rem]
         relative
         my-0
-        
+        nav-open
       "
     >
       <!-- LOGO -->
       <a href="#" class="">
-        <span class=" text-[#49081a] font-extrabold text-[2rem] hover:text-[3rem] transition-all">yh.</span>
+        <img class="w-auto h-28" src="images/cover.png" />
+        <!-- <span class=" text-[#515151] font-extrabold text-[2rem] hover:text-[3rem] transition-all">yh.</span>  -->
       </a>
       <!-- NAVIGATION -->
-      <nav>
-       
-        <ul class="flex list-none items-center gap-[2rem]">
-          <li class="relative">
-            
+      <nav class="translate-x-[100%] absolute top-0 left-0 z-10 flex items-center justify-center invisible w-full h-screen transition-all bg-white opacity-0 pointer-events-none main-nav md:w-auto md:h-auto bg-opacity-80 md:static backdrop-blur-md">
+        <ul class="flex-col md:flex-row flex list-none justify-center items-center gap-[4.8rem] md:gap-[2rem]">
+          <li class="relative">            
             <a
-              class="text-md font-semibold  transition-all  hover:bg-gray-200 px-[2.5rem] py-[1rem]  rounded-md
-              href="#portfolio "
-              >Portfolio</a
-            >
-            <ion-icon name="albums-outline" class="absolute bottom-0 left-0 -translate-y-0.5 translate-x-5"></ion-icon>
+              class="text-3xl md:text-lg font-semibold transition-all md:hover:bg-gray-200 px-[2.5rem] py-[1rem]  rounded-md main-nav-link"
+              href="#portfolio"
+              >Portfolio</a>            
+            <ion-icon name="albums-outline" class="absolute left-0 hidden translate-x-5 -translate-y-1 icon-mobile-nav md:block md:bottom-0"></ion-icon>
           </li>
           <li>
             <a
-              class="text-md font-semibold text-white bg-[#49081a] transition-all  hover:bg-gray-200 px-[2.5rem] py-[1rem] hover:text-gray-800 rounded-md"
-              href="#portfolio "
-              >Get in touch!</a
-            >
-          </li>
-          
+              class="text-3xl md:text-lg font-semibold text-white bg-[#894B48] transition-all hover:bg-gray-200 px-[2.5rem] py-[1rem] hover:text-gray-800 rounded-md main-nav-link"
+              href="#cta"
+              >Get in touch!</a>
+          </li>          
         </ul>
       </nav>
+
+<!-- MOBILE NAV  -->
+
+
+  <button class="z-20 cursor-pointer btn-mobile-nav md:hidden">
+    <ion-icon class="w-10 h-10 text-[#894B48]  icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="hidden w-10 h-10 text-[#894B48] icon-mobile-nav" name="close-outline"></ion-icon>
+  </button>
+
+      
     </header>
 
     <!-- HERO SECTION -->
-    <section class="py-20 px-14 bg-gray-50 mb-65">
-      <div class="max-w-[1200px] flex items-center gap-40 mx-auto my-0 ">
+    <section class="section-hero py-20 px-14 bg-[#fcfbfb] mb-65">
+      <div class="max-w-[1200px] md:flex  md:text-justify items-center gap-40 mx-auto my-0 ">
         <!-- HERO IMG -->
-        <img src="images/hero.jpg" class="max-w-sm rounded-md cardshadow"></img>
+        <img src="/build/images/hero.jpg" class="z-20 max-w-sm mx-auto mb-20 transition-all rounded-md cardshadow hover:scale-105"></img>
         <!-- HERO TEXT  -->
-        <div class="w-full">
-          <h1 class="text-6xl font-normal">Hi, I'm <span class="font-bold text-[#49081a] "> Yosuf Hariq</span></h1>
-          <p class="pt-10 text-3xl font-bold leading-8 ">I help local businesses design beautiful and modern websites.
+        <div class="w-full md:text-left">
+          <h1 class="text-5xl font-normal heading-primary md:text-6xl">Hi, I'm <span class="font-bold text-[#894B48] "> Yosuf Hariq</span></h1>
+          <p class="pt-10 text-2xl font-bold leading-8 md:text-3xl ">I help local businesses design beautiful and modern websites.
           </p>
-          <p class="pt-10 font-normal leading-8 text-md">I am a front-end developer based out of Toronto with a keen eye for good design. I bring a unique background of project management and engineering, and love designing sleek user interfaces that make complex things simple and a joy to use. 
+          <p class="pt-10 text-sm font-normal leading-8 md:text-md">I am a front-end developer based out of Toronto with a keen eye for good design. I bring a unique background of project management and engineering, and love designing sleek user interfaces that make complex things simple and a joy to use. 
           </p>
-          <p class="pt-4 font-normal leading-8 text-md">When I'm not absorbed in my code, I'm likely walking nature trails or practising yoga. I'm also an avid movie buff. </p> 
+          <p class="pt-4 text-sm font-normal leading-8 md:text-md">When I'm not absorbed in my code, I'm likely walking nature trails or practising yoga. I'm also an avid movie buff. </p> 
 
+          <div class="flex gap-5 mt-10 logos text-[#894B48]">
+            <a href=""> <ion-icon name="mail" class="w-6 h-6"></ion-icon></a>
+             <a href=""><ion-icon name="logo-github" class="w-6 h-6"></ion-icon></a>
+             <a href=""><ion-icon name="logo-linkedin" class="w-6 h-6"></ion-icon></a>
+             
+           </div>
         </div>
+        
       </div>
+      
     </section>
 
 <!-- PORTFOLIO SECTION  -->
 
-<section class="gap-10 mx-auto max-w-[1200px] grid px-8 py-20 bg-white mb-65">
+<section class="gap-10 mx-auto max-w-[1200px] grid px-8 py-20 bg-white mb-65" id="portfolio">
   <!-- <h2 class="mb-5 text-4xl font-bold text-center">Portfolio</h2> -->
   <!-- OMNIFOOD CARD  -->
-  <card class="flex items-stretch mb-10 overflow-hidden text-white transition-all bg-[#370613] rounded-lg hover:-translate-y-5 hover:shadow-2xl">
+  <card class="flex flex-col md:flex-row items-stretch mb-10 overflow-hidden text-white transition-all bg-[#6e3c3a] rounded-lg hover:-translate-y-5 hover:shadow-2xl">
     <!-- CARD INFO  -->
-    <div class="py-16 pl-16 w-[45%]">
+    <div class="p-12 pb-2 md:pb-12 md:pr-0 md:w-[45%]">
       <h2 class="mb-8 text-2xl font-bold">Omnifood Subscription</h2>
       <p class="text-sm font-semibold leading-6 mb-7">The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
       <!-- CARD ICONS  -->
-      <a href = "" class="flex items-center w-3/4 gap-4 px-3 py-2 mb-1 rounded-md hover:bg-gray-200 hover:text-gray-900">
-        <ion-icon name="share-outline" class="w-5 h-5"></ion-icon>
-        <p class="text-sm">View Website</p>
-      </a>
-      <a href="" class="flex items-center w-3/4 gap-4 px-3 py-2 rounded-md hover:bg-gray-200 hover:text-gray-900">
-        <ion-icon name="logo-github" class="w-5 h-5"></ion-icon>
-        <p class="text-sm">Repository</p>
-      </a>
+      <div class="flex md:flex-col">
+
+        <a href = "" class="flex items-center w-3/4 gap-4 px-3 py-2 mb-1 rounded-md hover:bg-gray-200 hover:text-gray-900">
+          <ion-icon name="share-outline" class="w-5 h-5"></ion-icon>
+          <p class="text-sm">View Website</p>
+        </a>
+        <a href="" class="flex items-center w-3/4 gap-4 px-3 py-2 mb-1 rounded-md hover:bg-gray-200 hover:text-gray-900">
+          <ion-icon name="logo-github" class="w-5 h-5"></ion-icon>
+          <p class="text-sm">Repository</p>
+        </a>
+      </div>
     </div>
     <!-- CARD IMG  -->
-    <div class="transition-all omnifood" role="img" aria-label="omnifood-website-screenshots"></div> </div>   
+    <div class="transition-all h-60 md:h-auto omnifood" role="img" aria-label="omnifood-website-screenshots"></div> </div>   
   </card>
 
 
   <!-- APPAREL SALES PAGE CARD  -->
-  <card class="flex items-stretch overflow-hidden mb-10 text-white rounded-lg bg-[#120206] hover:-translate-y-5 hover:shadow-2xl transition-all">
+  <card class="flex-col flex md:flex-row items-stretch overflow-hidden mb-10 text-white rounded-lg bg-[#522d2b] hover:-translate-y-5 hover:shadow-2xl transition-all">
     <!-- CARD INFO  -->
-    <div class="py-16 pl-16 w-[45%]">
+    <div class="p-12 pb-2 md:pb-12 md:pr-0 md:w-[45%]">
       <h2 class="mb-8 text-2xl font-bold">Base Apparel Sales Page</h2>
       <p class="text-sm font-semibold leading-6 mb-7">A beautiful sales page announcing the launch of a new fashion store with a CTA to collect leads for a nurturing campaign.</p>
       <!-- CARD ICONS  -->
-      <a href = "" class="flex items-center w-3/4 gap-4 px-3 py-2 mb-4 rounded-md hover:bg-gray-200 hover:text-gray-900">
-        <ion-icon name="share-outline" class="w-5 h-5"></ion-icon>
-        <p class="text-sm">View Website</p>
-      </a>
-      <a href="" class="flex items-center w-3/4 gap-4 px-3 py-2 rounded-md hover:bg-gray-200 hover:text-gray-900">
-        <ion-icon name="logo-github" class="w-5 h-5"></ion-icon>
-        <p class="text-sm">Repository</p>
-      </a>
+      <div class="flex items-start md:flex-col">
+
+        <a href = "" class="flex items-center w-3/4 gap-4 px-3 py-2 mb-4 rounded-md hover:bg-gray-200 hover:text-gray-900">
+          <ion-icon name="share-outline" class="w-5 h-5"></ion-icon>
+          <p class="text-sm">View Website</p>
+        </a>
+        <a href="" class="flex items-center w-3/4 gap-4 px-3 py-2 mb-1 rounded-md hover:bg-gray-200 hover:text-gray-900">
+          <ion-icon name="logo-github" class="w-5 h-5"></ion-icon>
+          <p class="text-sm">Repository</p>
+        </a>
+      </div>
     </div>
     <!-- CARD IMG  -->
-    <div class="transition-all sales" role="img" aria-label="omnifood-website-screenshots"></div> </div>   
+    <div class="transition-all sales h-60 md:h-auto" role="img" aria-label="omnifood-website-screenshots"></div> </div>   
   </card>
 
   
   <!-- LISBON CHAIR SHOP -->
-  <card class="hover:-translate-y-5 hover:shadow-2xl flex items-stretch overflow-hidden text-white rounded-lg bg-[#0a2a23] ">
+  <card class="hover:-translate-y-5 hover:shadow-2xl flex-col md:flex-row flex items-stretch overflow-hidden text-white rounded-lg bg-[#452624] ">
     <!-- CARD INFO  -->
-    <div class="py-16 pl-16 w-[45%]">
+    <div class="p-12 pb-2 md:pb-12 md:pr-0 md:w-[45%]">
       <h2 class="mb-8 text-2xl font-bold">Lisbon Chair Shop</h2>
       <p class="text-sm font-semibold leading-6 mb-7">Featuring a small furniture shop in the heart of Lisbon. The design reflects the perfect blend of beauty and comfort that is emobidied in their product. </p>
       <!-- CARD ICONS  -->
-      <a href = "" class="flex items-center w-3/4 gap-4 px-3 py-2 mb-4 rounded-md hover:bg-gray-200 hover:text-gray-900">
-        <ion-icon name="share-outline" class="w-5 h-5"></ion-icon>
-        <p class="text-sm">View Website</p>
-      </a>
-      <a href="" class="flex items-center w-3/4 gap-4 px-3 py-2 rounded-md hover:bg-gray-200 hover:text-gray-900">
-        <ion-icon name="logo-github" class="w-5 h-5"></ion-icon>
-        <p class="text-sm">Repository</p>
-      </a>
+      <div class="flex items-start md:flex-col">
+        <a href = "" class="flex items-center w-3/4 gap-4 px-3 py-2 mb-4 rounded-md hover:bg-gray-200 hover:text-gray-900">
+          <ion-icon name="share-outline" class="w-5 h-5"></ion-icon>
+          <p class="text-sm">View Website</p>
+        </a>
+        <a href="" class="flex items-center w-3/4 gap-4 px-3 py-2 mb-1 rounded-md hover:bg-gray-200 hover:text-gray-900">
+          <ion-icon name="logo-github" class="w-5 h-5"></ion-icon>
+          <p class="text-sm">Repository</p>
+        </a>
+      </div>
     </div>
     <!-- CARD IMG  -->
-    <div class="transition-all lisbon" role="img" aria-label="omnifood-website-screenshots"></div> </div>   
+    <div class="transition-all lisbon h-60 md:h-auto" role="img" aria-label="omnifood-website-screenshots"></div> </div>   
   </card>
   
 </section>
 
 <!-- SECTION IMAGE  -->
 
-<section class="bg-gray-50" >
+<section class="bg-[#fcfbfb]" >
   <div class="mx-auto max-w-[1200px] px-8 py-20 mb-65">
 
     <img src="images/working.webp" alt="picture of me working on code" class="w-auto h-auto" />
@@ -149,45 +174,46 @@
 </section>
 
 <!-- SECTION CTA  -->
-<section class="bg-white" >
+<section class="bg-white" id="cta" >
     <div class="mx-auto max-w-[1200px] px-8 py-20 text-center">
-      <div class="w-[50%] mx-auto">
+      <div class="max-w-[80%] md:w-[50%] mx-auto">
 <!-- HEADER AND TEXT  -->
         <h1 class="mb-5 text-2xl font-medium md:text-4xl ">Get in touch!</h1>
-        <p class="text-lg font-medium">Want to collaborate on a project, or just want to say hi? Feel free to e-mail me at <a href="" class="text-[#49081a] underline">m.hariq@gmail.com</a> or use the form below.</p>
+        <p class="font-medium text-md md:text-lg">Want to collaborate on a project, or just want to say hi? Feel free to e-mail me at <a href="" class="text-[#522d2b] underline">m.hariq@gmail.com</a> or use the form below.</p>
       </div>
       <!-- FORM  -->
-      <div class="mx-auto w-[50%]">
+      <div class="mx-auto w-[80%] md:w-[50%]">
         <form class="flex flex-col items-center max-w-full gap-10 mx-auto my-12">
           
 
             <div class="w-full">
               <label class="sr-only" for="name">Your name</label>
-              <input type="name" id="name" placeholder="Your Name" class="w-full px-3 py-4 border-2 border-[#49081a] placeholder-[#49081a] placeholder-opacity-30 border-solid rounded bg-[#f8e8ec]">
+              <input type="name" id="name" placeholder="Your Name" class="w-full px-3 py-4 border-2 border-[#522d2b] placeholder-[#515151] placeholder-opacity-30 border-solid rounded bg-gray-50">
             </div>
             <div class="w-full">
               <label class="sr-only" for="email">Your email address</label>
-              <input type="text" id="email" placeholder="Email" class="w-full px-3 py-4  border-[#49081a] border-solid border-2 rounded placeholder-opacity-30 bg-[#f8e8ec] placeholder-[#49081a] ">
+              <input type="text" id="email" placeholder="Email" class="w-full px-3 py-4  border-[#522d2b] border-solid border-2 rounded placeholder-opacity-30 bg-gray-50 placeholder-[#515151] ">
             </div>
            
           
           <div class="w-full">
             <label class="sr-only" for="message">Enter your message here</label>
-            <textarea type="text" id="message" placeholder="Enter your message here" rows="5" class="w-full px-3 py-2  border-[#49081a] border-solid border-2 rounded placeholder-opacity-30 bg-[#f8e8ec] placeholder-[#49081a]"></textarea>
+            <textarea type="text" id="message" placeholder="Enter your message here" rows="5" class="w-full px-3 py-2  border-[#522d2b] border-solid border-2 rounded placeholder-opacity-30 bg-gray-50 placeholder-[#515151]"></textarea>
           </div>  
-            <button class="px-6 py-3 font-semibold text-white bg-[#49081a] rounded hover:bg-gray-300 hover:text-[#49081a]">Sign Up</button>
+            <button class="px-6 py-3 font-semibold text-white bg-[#522d2b] rounded hover:bg-gray-300 hover:text-gray-800">Sign Up</button>
         </form>   
       </div>
     </div>
 </section>
 
-<footer class="py-10 bg-gray-200">
-  <div class="flex justify-between px-4 text-[#49081a]">
-    <p>&copy; 2021 Yosuf Hariq</p>
+<footer class="py-4 text-[8px] border-t-[#522d2b] border-opacity-50 border-t-2">
+  <div class="flex justify-between px-4 text-[#522d2b]">
+    <p>&copy; <span class="year">2021</span> Yosuf Hariq</p>
     <div class="flex gap-5 px-4 logos">
-      <ion-icon name="mail" class="w-8 h-8"></ion-icon>
-      <ion-icon name="logo-github" class="w-8 h-8"></ion-icon>
-      <ion-icon name="logo-linkedin" class="w-8 h-8"></ion-icon>
+     <a href=""> <ion-icon name="mail" class="w-4 h-4"></ion-icon></a>
+      <a href=""><ion-icon name="logo-github" class="w-4 h-4"></ion-icon></a>
+      <a href=""><ion-icon name="logo-linkedin" class="w-4 h-4"></ion-icon></a>
+      
     </div>
 
   
@@ -195,5 +221,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
