@@ -438,16 +438,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-grayscale: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-invert: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-opacity: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-saturate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-sepia: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .sr-only {
@@ -460,14 +450,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
-}
-
-.pointer-events-none {
-  pointer-events: none;
-}
-
-.invisible {
-  visibility: hidden;
 }
 
 .absolute {
@@ -483,16 +465,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: sticky;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .left-0 {
   left: 0px;
-}
-
-.z-\[100\] {
-  z-index: 100;
 }
 
 .z-\[999\] {
@@ -501,6 +475,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .z-10 {
   z-index: 10;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .my-0 {
@@ -516,6 +494,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-20 {
@@ -570,10 +553,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 7rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -598,16 +577,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
 .w-auto {
   width: auto;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-10 {
   width: 2.5rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-6 {
@@ -634,8 +621,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 1200px;
 }
 
-.max-w-\[20rem\] {
-  max-width: 20rem;
+.max-w-\[14rem\] {
+  max-width: 14rem;
 }
 
 .max-w-\[80\%\] {
@@ -644,23 +631,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-full {
   max-width: 100%;
-}
-
-.max-w-\[15rem\] {
-  max-width: 15rem;
-}
-
-.max-w-\[10rem\] {
-  max-width: 10rem;
-}
-
-.max-w-\[14rem\] {
-  max-width: 14rem;
-}
-
-.translate-x-\[-100\%\] {
-  --tw-translate-x: -100%;
-  transform: var(--tw-transform);
 }
 
 .translate-x-5 {
@@ -806,12 +776,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
-}
-
 .p-12 {
   padding: 3rem;
+}
+
+.p-40 {
+  padding: 10rem;
 }
 
 .py-0 {
@@ -832,11 +802,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
 }
 
 .px-8 {
@@ -872,16 +837,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pr-\[1\.2rem\] {
@@ -1016,16 +971,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-placeholder-opacity: 0.3;
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
-.backdrop-blur-md {
-  --tw-backdrop-blur: blur(12px);
-  -webkit-backdrop-filter: var(--tw-backdrop-filter);
-          backdrop-filter: var(--tw-backdrop-filter);
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1109,21 +1054,21 @@ html {
 }
 
 .omnifood {
-  background-image: url("../build/images/omnifood-card.png");
+  background-image: url("images/omnifood-card.png");
   background-size: cover;
   background-position: center;
   width: 100%;
 }
 
 .sales {
-  background-image: url("../build/images/sales-card.png");
+  background-image: url("images/sales-card.png");
   background-size: cover;
   background-position: center;
   width: 100%;
 }
 
 .lisbon {
-  background-image: url("../build/images/lisbon.png");
+  background-image: url("images/lisbon.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -1181,6 +1126,111 @@ html {
 
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .md\:bottom-0 {
+    bottom: 0px;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-auto {
+    height: auto;
+  }
+
+  .md\:w-\[45\%\] {
+    width: 45%;
+  }
+
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .md\:max-w-\[20rem\] {
+    max-width: 20rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  .md\:gap-\[2rem\] {
+    gap: 2rem;
+  }
+
+  .md\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .md\:pr-\[4\.8rem\] {
+    padding-right: 4.8rem;
+  }
+
+  .md\:pb-12 {
+    padding-bottom: 3rem;
+  }
+
+  .md\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-justify {
+    text-align: justify;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:hover\:bg-gray-200:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  }
+}
+ty: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
