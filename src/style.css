@@ -12,6 +12,30 @@
   --leadFont: 1.2rem;
 } */
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+@media (max-width: 786px) {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+    backdrop-filter: blur(20px);
+  }
+}
+
 .nav-open .main-nav {
   opacity: 1;
   pointer-events: auto;
@@ -24,7 +48,7 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 40;
   height: 80px;
   box-shadow: 0 10px 5px 2px rgba(0, 0, 0, 5%);
 }

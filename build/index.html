@@ -24,7 +24,8 @@
         pr-[1.2rem]
         relative
         my-0
-        nav-open
+        
+        
       "
     >
       <!-- LOGO -->
@@ -33,7 +34,7 @@
         <!-- <span class=" text-[#515151] font-extrabold text-[2rem] hover:text-[3rem] transition-all">yh.</span>  -->
       </a>
       <!-- NAVIGATION -->
-      <nav class="translate-x-[100%] absolute top-0 left-0 z-10 flex items-center justify-center invisible w-full h-screen transition-all bg-white opacity-0 pointer-events-none main-nav md:w-auto md:h-auto bg-opacity-80 md:static backdrop-blur-md">
+        <nav class="main-nav">
         <ul class="flex-col md:flex-row flex list-none justify-center items-center gap-[4.8rem] md:gap-[2rem]">
           <li class="relative">            
             <a
@@ -54,7 +55,7 @@
 <!-- MOBILE NAV  -->
 
 
-  <button class="z-20 cursor-pointer btn-mobile-nav md:hidden">
+  <button class="cursor-pointer z-[999] btn-mobile-nav md:hidden">
     <ion-icon class="w-10 h-10 text-[#894B48]  icon-mobile-nav" name="menu-outline"></ion-icon>
     <ion-icon class="hidden w-10 h-10 text-[#894B48] icon-mobile-nav" name="close-outline"></ion-icon>
   </button>
@@ -63,10 +64,10 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="section-hero py-20 px-14 bg-[#fcfbfb] mb-65">
+    <section class="section-hero py-20 px-8 md:px-14 bg-[#fcfbfb] mb-65">
       <div class="max-w-[1200px] md:flex  md:text-justify items-center gap-40 mx-auto my-0 ">
         <!-- HERO IMG -->
-        <img src="images/hero.jpg" class="z-10 max-w-[20rem] mx-auto mb-20 transition-all rounded-md cardshadow hover:scale-105"></img>
+        <img src="images/hero.jpg" class="z-10 max-w-[14rem] md:max-w-[20rem] mx-auto mb-20 transition-all rounded-md cardshadow hover:scale-105"></img>
         <!-- HERO TEXT  -->
         <div class="w-full md:text-left">
           <h1 class="text-5xl font-normal heading-primary md:text-6xl">Hi, I'm <span class="font-bold text-[#894B48] "> Yosuf Hariq</span></h1>
