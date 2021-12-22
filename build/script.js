@@ -72,7 +72,7 @@ const obs = new IntersectionObserver(
   {
     root: null, //In the viewport
     threshold: 0,
-    rootMargin: "-80px",
+    rootMargin: "-100px",
   }
 );
 obs.observe(sectionHeroel);
